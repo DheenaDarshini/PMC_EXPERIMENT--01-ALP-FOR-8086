@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-## Name :
-## Roll no :
-## Date of experiment :
+## Name : Dheena Darshini Karthik Dheepan
+## Roll no : 212223240030
+## Date of experiment : 21/07/2026
 
 
 
@@ -76,25 +76,77 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations (16 bit)
+```
+MOV BX,0FFFFH;
+MOV AX,0FFFFH;
+ADD AX,BX;
+MOV [2000H],AX;   
+
+MOV AX,4444H;
+MOV CX,3246H;
+SUB AX,CX;
+MOV [2002H],AX;
+
+MOV AX,4357H;
+MOV BX,0999H;
+MUL CX;
+MOV [2004H],AX;
+
+MOV AX,4444H;
+MOV BX,3246H;
+DIV BX;
+MOV [2006H],AX;
 
 
 
-## Output  
+ret
 
+```
 
+## Output 
+<img width="2880" height="1800" alt="Screenshot 2026-07-21 082448" src="https://github.com/user-attachments/assets/b87ec194-c918-43f3-aea2-26cc97da4ad5" />
 
 
 
 ## Programs for logical  operations (16 bit)
+```
+org 100h
+
+MOV BX,1234H
+MOV AX,3333H
+AND AX,BX
+MOV [2000H],AX
+NOT AX
+MOV [2002H],AX
+
+MOV BX,1234H
+MOV AX,3333H
+OR AX,BX
+MOV [2004H],AX
+NOT AX
+MOV [2006H],AX
+
+MOV BX,1234H
+MOV AX,3333H
+XOR AX,BX
+MOV [2008H],AX
+NOT AX
+MOV [2010H],AX
+
+ret
+```
 
 
 
 ## Output  
+<img width="2880" height="1800" alt="Screenshot 2026-07-21 082833" src="https://github.com/user-attachments/assets/4606fedd-8fa2-4ca9-a5c5-ee4b1a4c26ef" />
+
 
 
 
 
 ## Result :
+Thus we have successfully executed ALP on fundamental arithmetic and logical operations using emu8086 emulator.
  
 
 
